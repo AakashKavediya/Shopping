@@ -17,6 +17,7 @@ main #article1 {
     color: white;
     background-image: linear-gradient(black, rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.637)), url("./images/Background1.png");
     position: relative;
+    background-size: cover;
 }
 
 main #article1 #span1 {
@@ -60,7 +61,7 @@ main #article1 #span2 {
 }
 
 #box {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     align-items: center;
     justify-content: center;
     padding-top: 79px;
@@ -68,7 +69,7 @@ main #article1 #span2 {
 
 .block {
     height: max-content;
-    min-height: 370px;
+    /* min-height: 370px; */
     display: flex;
     padding: 15px;
     padding-top: 40px;
@@ -93,11 +94,11 @@ main #article1 #span2 {
 }
 
 .block img {
-    height: max-content;
-    min-width: 100px;
-    max-width: 100px;
-    width: 100px;
-    height: 200px;
+    width: max-content;
+    /* min-width: 100px; */
+    /* max-width: 100px; */
+    /* width: 100px; */
+    height: 150px;
 }
 
 .block h4 {
@@ -151,6 +152,59 @@ main #article1 #span2 {
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#audio iframe {
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#audio {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    background-color: whitesmoke;
+}
+
+footer .one a {
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: serif;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+}
+
+footer .one {
+    padding: 10px;
+}
+
+footer .two {
+    padding: 10px;
+}
+
+footer .two b {
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 
