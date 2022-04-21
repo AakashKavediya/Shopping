@@ -25,10 +25,66 @@
         </nav>
         <nav id="nav2">
             <a href="../shop/index.html"><i class="fa-solid fa-cart-shopping"></i> <span class="sidelink">Shop</span></a>
-            <a href="#"><i class="fa-solid fa-phone"></i> <span class="sidelink">Contact Us</span></a>
+            <a href="./index.html"><i class="fa-solid fa-phone"></i> <span class="sidelink">Contact Us</span></a>
             <a href="#"><i class="fa-solid fa-clapperboard"></i> <span class="sidelink">Videos</span></a>
         </nav>
     </header>
+
+    <main>
+        <br><br><br><br><br><br>
+        <div class="area">
+            <form onsubmit="sendEmail(); reset();  return false; ">
+                <h2>Contact Us</h2>
+                <div id="row1">
+                    <b>First Name:</b><br><input type="text" required name="Username" id="Username" placeholder="Enter First Name">
+                </div>
+
+                <div id="row2">
+                    <b>Last Name:</b><br><input type="text" required name="Username" id="lastname" placeholder="Enter Last Name">
+                </div>
+
+                <div id="row1">
+                    <b>E-mail:</b><br><input type="email" required name="E-mail" id="e-mail" placeholder="Enter E-mail">
+                </div>
+
+                <div id="row2">
+                    <b>Phone No: </b><br><input type="number" required name="number" id="number" placeholder="Enter Number">
+                </div>
+                <div id="row3">
+                    <b>Message:</b><br><textarea name="area" required id="area" cols="30" rows="10" placeholder="Enter Your Address"></textarea>
+                </div>
+
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+
+    </main>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "kavediyaaakash@gmail.com",
+                Password: "pbtubogtmckpjcsq",
+                To: 'kavediyaaakash@gmail.com',
+                From: document.getElementById("e-mail").value,
+                Subject: "Mail From Mr. Codr Website",
+                Body: "First Name : " + document.getElementById('Username').value +
+                    "<br> Last Name : " + document.getElementById('lastname').value +
+                    "<br>  E-Mail : " + document.getElementById('e-mail').value +
+                    "<br> Phone No : " + document.getElementById('number').value +
+                    "<br> Message : " + document.getElementById('area').value
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 
 
     <footer>
