@@ -10,7 +10,7 @@ main {
 }
 
 main #article1 {
-    height: 87vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,11 +115,12 @@ main #article1 #span2 {
 }
 
 #bank {
-    width: 90%;
+    width: 300px;
     background-color: rgb(26, 26, 26);
     border-radius: 20px;
     padding: 25px;
     margin: 20px;
+    transition: .8s;
     /* display: inline-block; */
 }
 
@@ -130,7 +131,7 @@ main #article1 #span2 {
 }
 
 #bank img {
-    height: 400px;
+    height: 300px;
     /* margin-left: 100px; */
 }
 
@@ -182,6 +183,7 @@ footer {
     padding-bottom: 5px;
     padding-top: 8px;
     background-color: whitesmoke;
+    background-color: #000;
 }
 
 footer .one a {
@@ -192,23 +194,29 @@ footer .one a {
     font-family: serif;
     font-family: 'Rubik', sans-serif;
     padding: 10px;
+    color: whitesmoke;
 }
 
 footer .one {
     padding: 10px;
+    color: whitesmoke;
+    background-color: #000;
 }
 
 footer .two {
     padding: 10px;
+    color: whitesmoke;
+    background-color: #000;
 }
 
 footer .two b {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     margin-left: 5px;
     margin-right: 5px;
     font-family: serif;
     font-family: 'Rubik', sans-serif;
+    cursor: pointer;
 }
 
 
@@ -219,7 +227,7 @@ footer .two b {
 }
 
 #bank:hover {
-    transform: scale(1.1)
+    width: 320px;
 }
 
 #video {
@@ -251,7 +259,7 @@ footer .two b {
     }
     /* ______________ */
     #bank {
-        width: 90%;
+        width: 310px;
         background-color: rgb(26, 26, 26);
         border-radius: 20px;
         padding: 25px;
@@ -286,6 +294,6 @@ footer .two b {
     }
     /* -------------------- */
     #bank:hover {
-        transform: scale(.9)
+        width: 320px;
     }
 }
